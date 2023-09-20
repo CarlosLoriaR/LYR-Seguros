@@ -3,12 +3,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
+  color: #333;
 }
 
 body {
   font-size: 16px;
   line-height: 24px;
-  color: #333;
 }
 :root {
   --main-color: #234257;
@@ -61,22 +61,29 @@ nav {
   top: 10%;
   background-color: #fff;
 }
+header{
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
 .container-header {
   position: relative;
 }
 .img-waves {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 .container-header h1 {
-  font-size: 50px;
+  font-size: 80px;
 }
 .container-header p {
-  font-size: 20px;
-}
-.container-header .container{
-  padding-top: 120px;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 31.2px;
 }
 .img-header{
   filter: drop-shadow(0px 0px 5px #222);
+  border-radius: 50%;
 }
