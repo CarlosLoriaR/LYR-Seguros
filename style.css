@@ -23,6 +23,7 @@ nav {
   margin-right: 30px;
   position: relative;
   text-transform: uppercase;
+  max-width: fit-content;
 }
 .navbar-nav li:last-child {
   margin-right: 0px;
@@ -62,23 +63,23 @@ nav {
   background-color: #fff;
 }
 header{
+  border: 1px blue solid;
+  background-image: url(assets/blob-scene-haikei.svg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+.container-header{
   height: 100vh;
   display: grid;
   place-items: center;
 }
-.container-header {
-  position: relative;
-}
-.img-waves {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-}
 .container-header h1 {
-  font-size: 80px;
+  font-size: 5rem;
 }
 .container-header p {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   letter-spacing: 1px;
   line-height: 31.2px;
