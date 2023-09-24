@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
-  color: #333;
+  color: var(--primary-color);
 }
-
 body {
   font-size: 16px;
   line-height: 24px;
 }
 :root {
-  --main-color: #234257;
+  --primary-color: #234257;
+  --secondary-color: #308d7c;
+}
+p{
+  font-family: 'Work Sans', sans-serif !important;
+}
+.primary{
+  color: var(--primary-color);
+}
+.secondary{
+  color: var(--secondary-color);
 }
 nav {
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
 }
 .logo-nav {
   width: 100px;
@@ -62,29 +72,55 @@ nav {
   top: 10%;
   background-color: #fff;
 }
-header{
-  border: 1px blue solid;
-  background-image: url(assets/blob-scene-haikei.svg);
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px;
-}
 .container-header{
-  height: 100vh;
+  position: relative;
+  height:calc(100vh - 65px);
   display: grid;
   place-items: center;
+  margin-top: 65px;
+  background-image: url(assets/5629407.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .container-header h1 {
   font-size: 5rem;
+  color: var(--primary-color);
 }
 .container-header p {
   font-size: 1.625rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 31.2px;
 }
-.img-header{
-  filter: drop-shadow(0px 0px 5px #222);
-  border-radius: 50%;
+.img-bg{
+  position: absolute;
+  display: block;
+}
+.img1{
+  bottom: 0;
+  left: -50px;
+  z-index: -1;
+}
+.img2{
+  right: 0;
+  top: 0;
+  z-index: -2;
+}
+.img-doctor{
+  width: 100%;
+}
+@media (max-width:991px) {
+  .element1{
+    order: 2;
+  }
+  .element2{
+    order: 1;
+  }
+  .container-header h1 {
+    font-size: 3rem;
+  }
+  .container-header p {
+    font-size: 1rem;
+  }
+  .img-doctor{
+    width: 100%;
+  }
 }
